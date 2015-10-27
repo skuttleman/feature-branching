@@ -7,6 +7,10 @@ MyObject.prototype.isPrime = function(x) {
   return true;
 };
 
+MyObject.prototype.isPalindrome = function(str) {
+  return str === str.split('').reverse().join('');
+};
+
 for (var i=1; i <= 20; i++)
 {
     if (i % 15 == 0)
