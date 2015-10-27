@@ -1,5 +1,5 @@
-function factorial(x) {
-  if (x < 1) throw 'Invalid Input';
-  if (x <= 2) return x;
-  else return x * factorial(x - 1);
+Number.prototype.factorial = function() {
+  if (this < 1) throw 'Invalid Input';
+  if (this <= 2) return Number(this);
+  else return this * (this - 1).factorial();
 }
