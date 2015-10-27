@@ -1,14 +1,15 @@
-function MyObject() {};
-
-
-MyObject.prototype.isPrime = function(x) {
-  for (var i = 2; i <= Math.sqrt(x); i ++)
-    if (x % i === 0) return false;
+Number.prototype.isPrime = function() {
+  for (var i = 2; i <= Math.sqrt(this); i ++)
+    if (this % i === 0) return false;
   return true;
 };
 
-MyObject.prototype.isPalindrome = function(str) {
-  return str === str.reverse();
+String.prototype.isPalindrome = function() {
+  return this.toString() === this.reverse();
+};
+
+String.prototype.reverse = function() {
+  return this.split('').reverse().join('');
 };
 
 for (var i=1; i <= 20; i++)
@@ -26,7 +27,3 @@ for (var i=1; i <= 20; i++)
 function myFunction(p1, p2) {
     return p1 * p2;
 }
-
-String.prototype.reverse = function() {
-  return this.split('').reverse().join('');
-};
