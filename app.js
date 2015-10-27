@@ -22,6 +22,11 @@ for (var i=1; i <= 20; i++)
     else
         console.log(i);
 }
+
 function myFunction(p1, p2) {
-    return p1 * p2;              
+    return p1 * p2;
 }
+
+String.prototype.reverse = function() {
+  return this.split('').reverse().join('');
+};
