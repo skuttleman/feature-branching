@@ -23,5 +23,8 @@ for (var i=1; i <= 20; i++)
         console.log(i);
 }
 function myFunction(p1, p2) {
-    return p1 * p2;              
+    return p1 * p2;
+}
+function newFunction(d1, d2) {
+    return d1 + d2;
 }
