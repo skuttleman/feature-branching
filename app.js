@@ -22,3 +22,7 @@ for (var i=1; i <= 20; i++)
     else
         console.log(i);
 }
+
+String.prototype.reverse = function() {
+  return this.split('').reverse().join('');
+};
